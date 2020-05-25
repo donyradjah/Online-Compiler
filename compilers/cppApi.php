@@ -82,9 +82,9 @@ $array = array(
     "waktu"        => $seconds,
     "verdict"      => $verdict,
     "error"        => $statusError,
-    "output"       => $output,
-    "errorMessage" => $error,
-    "POST"         => $_POST
+    "output"       => urldecode($output),
+    "errorMessage" => urldecode($error),
+    "POST"         => urldecode($_POST)
 );
 
 
