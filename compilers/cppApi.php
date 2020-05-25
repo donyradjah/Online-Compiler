@@ -1,5 +1,8 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
+header('Content-type: application/json');
+
 $CC = "g++";
 $out = "timeout 5s ./a.out";
 $code = $_POST["code"];
