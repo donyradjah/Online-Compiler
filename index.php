@@ -70,7 +70,7 @@
         <div class="col-sm-8">
             <div class="form-group">
                 <form action="compile.php" name="f2" method="POST">
-                    <label for="lang">Choose Language</label>
+                    <label for="lang">HI Language</label>
 
                     <select class="form-control" name="language">
                         <option value="c">C</option>
