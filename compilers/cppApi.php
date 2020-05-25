@@ -3,8 +3,7 @@
 header("Access-Control-Allow-Origin: *");
 header('Content-type: application/json');
 
-$arr = json_decode($_POST);
-echo json_encode($arr);
+echo json_encode($_POST);
 
 
 //
