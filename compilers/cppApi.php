@@ -86,7 +86,7 @@ $array = array(
     "waktu"        => $seconds,
     "verdict"      => $verdict,
     "error"        => $statusError,
-    "output"       => $output,
+//    "output"       => $output,
     "errorMessage" => $error,
     "POST"         => ($_POST)
 );
