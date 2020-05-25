@@ -6,10 +6,10 @@ header('Content-type: application/json');
 $CC = "g++";
 $out = "timeout 5s ./a.out";
 $_POST["code"] = trim(preg_replace('/\s\s+/', ' ', $_POST["code"]));
-$_POST["code"] = str_replace("\r\n","",$_POST["code"]);
+$_POST["code"] = str_replace("\n","",$_POST["code"]);
 $code = $_POST["code"];
 $code = trim(preg_replace('/\s\s+/', ' ', $code));
-$code = str_replace("\r\n","",$code);
+$code = str_replace("\n","",$code);
 $input = $_POST["input"];
 $filename_code = "main.cpp";
 $filename_in = "input.txt";
@@ -86,7 +86,7 @@ $array = array(
     "waktu"        => $seconds,
     "verdict"      => $verdict,
     "error"        => $statusError,
-//    "output"       => $output,
+    "output"       => $output,
     "errorMessage" => $error,
     "POST"         => ($_POST)
 );
