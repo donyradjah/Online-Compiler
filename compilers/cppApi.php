@@ -64,13 +64,13 @@ $seconds = sprintf('%0.2f', $seconds);
 $verdict = "";
 
 if ($check == 1) {
-    $verdict = "<pre>Verdict : CE</pre>";
+    $verdict = "Verdict : CE";
 } else if ($check == 0 && $seconds > 3) {
-    $verdict = "<pre>Verdict : TLE</pre>";
+    $verdict = "Verdict : TLE";
 } else if (trim($output) == "") {
-    $verdict = "<pre>Verdict : WA</pre>";
+    $verdict = "Verdict : WA";
 } else if ($check == 0) {
-    $verdict = "<pre>Verdict : AC</pre>";
+    $verdict = "Verdict : AC";
 }
 
 exec("rm $filename_code");
