@@ -49,6 +49,8 @@ if (trim($error) == "") {
         $out = $out . " < " . $filename_in;
         $output = shell_exec($out);
     }
+}else{
+    $statusError = 1;
 }
 
 $executionEndTime = microtime(true);
