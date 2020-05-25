@@ -1,5 +1,8 @@
 <?php
 
+header("Access-Control-Allow-Origin: *");
+header('Content-type: application/json');
+
 $languageID = $_POST["language"];
 error_reporting(0);
 if ($_FILES["file"]["name"] != "") {
