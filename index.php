@@ -69,7 +69,7 @@
     <div class="row cspace">
         <div class="col-sm-8">
             <div class="form-group">
-                <form action="compile.php" name="f2" method="POST">
+                <form action="compilers/cppApi.php" name="f2" method="POST">
                     <label for="lang">HI Language</label>
 
                     <select class="form-control" name="language">
