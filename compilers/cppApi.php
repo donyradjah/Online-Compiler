@@ -5,6 +5,8 @@ header('Content-type: application/json');
 
 $CC = "g++";
 $out = "timeout 5s ./a.out";
+$_POST["code"] = trim(preg_replace('/\s\s+/', ' ', $_POST["code"]));
+$_POST["code"] = str_replace("\r\n","",$_POST["code"]);
 $code = $_POST["code"];
 $code = trim(preg_replace('/\s\s+/', ' ', $code));
 $code = str_replace("\r\n","",$code);
