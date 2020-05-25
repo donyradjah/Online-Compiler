@@ -49,7 +49,7 @@ if (trim($error) == "") {
         $out = $out . " < " . $filename_in;
         $output = shell_exec($out);
     }
-}else{
+} else {
     $statusError = 1;
 }
 
@@ -75,10 +75,11 @@ exec("rm *.txt");
 exec("rm $executable");
 
 $array = array(
-    "waktu"   => $seconds,
-    "verdict" => $verdict,
-    "error"   => $statusError,
-    "output"  => $output
+    "waktu"        => $seconds,
+    "verdict"      => $verdict,
+    "error"        => $statusError,
+    "output"       => $output,
+    "errorMessage" => $error
 );
 
 
