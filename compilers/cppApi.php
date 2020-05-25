@@ -62,7 +62,7 @@ $seconds = $executionEndTime - $executionStartTime;
 $seconds = sprintf('%0.2f', $seconds);
 
 $verdict = "";
-x``
+
 if ($check == 1) {
     $verdict = "<pre>Verdict : CE</pre>";
 } else if ($check == 0 && $seconds > 3) {
