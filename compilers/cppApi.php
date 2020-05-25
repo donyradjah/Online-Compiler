@@ -6,6 +6,8 @@ header('Content-type: application/json');
 $CC = "g++";
 $out = "timeout 5s ./a.out";
 $code = $_POST["code"];
+$code = trim(preg_replace('/\s\s+/', ' ', $code));
+$code = str_replace("\r\n","",$code);
 $input = $_POST["input"];
 $filename_code = "main.cpp";
 $filename_in = "input.txt";
